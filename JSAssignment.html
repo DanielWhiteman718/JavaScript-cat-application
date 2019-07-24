@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+	<head>
+        <meta name="authors" content="Daniel Whiteman">
+		<link rel="stylesheet" href="catApp.css">
+		<meta charset="utf-8"/>
+		<title>JavaScript Assignment</title>
+	</head>
+	
+	<body>
+		<!--Canvas to draw the cat on-->
+		<canvas id="myCanvas" width="800" height="500" style="border:1px solid #000000;"></canvas>
+		<!--Buttons with the links to their JavaScript functions-->
+		<button onclick = "sleep(ctx)">Sleep</button>
+		<button onclick = "sit(ctx)">Sit</button>
+		<button onclick = "drawToggleTail(ctx)">Toggle Tail</button>
+		<button onclick = "initial(ctx)">Reset</button>
+		<!--Application guide-->
+		<p>When you open the application you will see a cat standing at the bottom of the canvas. 
+		   You can control the cat by using the buttons to the right of the canvas. The sleep 
+		   button will make the cat go to sleep and if you click this while the cat is sleeping 
+		   it will wake up and be standing. The sit button will make the cat sit down and if you 
+		   click this while the cat is sitting the cat will go back to standing. The toggle tail 
+		   button will allow you to change the tail from pointing up to pointing down and vice versa. 
+		   The reset button will restore the cat to how it was when you opened the application.
+		</p>
+		<p>You can also control the cat by clicking on the canvas. You can change the position of 
+		   the cat on the canvas by clicking where you want it to move to. The cat will appear in 
+		   the x position of the mouse click. The vertical position on the cat will not change. If 
+		   you click on either of the eyes the eyes will go from open to closed and vice versa. You 
+		   can also click on the cat's mouth to make it yawn and the cat will continue to yawn until 
+		   you tell it to stop by clicking the button again.
+		</p>   
+		<p>You can toggle the cat's eyes and its yawning status as long as it is not sleeping. The 
+		   cat must be standing if you want to toggle the tail. Whenever the cat moves to another 
+		   part of the canvas it will be displayed as it was when you opened the application. This 
+		   application contains no animations.
+		</p>
+		<!--Link to the JavaScript file-->
+		<script src="JScat.js"></script>
+	</body>
+</html>
